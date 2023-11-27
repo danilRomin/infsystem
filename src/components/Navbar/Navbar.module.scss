@@ -1,0 +1,36 @@
+
+.nav__list {
+  border-right: inset;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 24px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+
+    &:hover {
+      color: rgba(37, 99, 235, 0.6);
+
+      path {
+        fill: rgba(37, 99, 235, 0.6);
+      }
+    }
+
+    &.active {
+      color: #2563EB;
+
+      path {
+        fill: #2563EB;
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 21px;
+  margin-bottom: 30px;
+}

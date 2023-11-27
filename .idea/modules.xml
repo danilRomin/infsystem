@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/infsystem.iml" filepath="$PROJECT_DIR$/.idea/infsystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react/socnet/.idea/socnet.iml" filepath="$PROJECT_DIR$/../react/socnet/.idea/socnet.iml" />
     </modules>
   </component>
 </project>

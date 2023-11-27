@@ -1,0 +1,56 @@
+#root, html {
+    background-color: rgb(247,248,250);
+}
+
+#root {
+    font-weight: 800;
+    line-height: 20px;
+    font-family: "inter", Roboto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+::placeholder { /* Стандартная спецификация CSS */
+    color: #98A2B2; /* Стандартный цвет подсказки */
+}
+
+.appWrapper {
+    display: grid;
+    grid-template-columns: 256px auto;
+    gap: 25px;
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dataItem {
+    display: inline-flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.dataItem__name {
+    color: #3361FF;
+}

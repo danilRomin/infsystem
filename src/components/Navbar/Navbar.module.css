@@ -1,0 +1,32 @@
+.nav__list {
+  border-right: inset;
+}
+.nav__list a {
+  text-decoration: none;
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 24px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+}
+.nav__list a:hover {
+  color: rgba(37, 99, 235, 0.6);
+}
+.nav__list a:hover path {
+  fill: rgba(37, 99, 235, 0.6);
+}
+.nav__list a.active {
+  color: #2563EB;
+}
+.nav__list a.active path {
+  fill: #2563EB;
+}
+
+h2 {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */

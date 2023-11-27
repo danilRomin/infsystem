@@ -1,0 +1,68 @@
+.header {
+  max-width: 1380px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(247, 248, 250);
+
+  h4 {
+    font-weight: bolder;
+    color: #475366;
+    font-size: 24px;
+  }
+  form {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+}
+
+.search {
+  color: #98A2B2;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgb(247, 248, 250);
+}
+
+.userInteraction {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  height: 50px;
+}
+
+.user__name {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    line-height: 20px;
+
+    &:first-child {
+      font-weight: 800;
+      color: #294566;
+      font-size: 12px;
+    }
+
+    &:last-child {
+      font-weight: 700;
+      color: #A3B6CC;
+      font-size: 10px;
+    }
+  }
+}
+
+.user__buttons {
+  display: flex;
+  gap: 15px;
+}
+
