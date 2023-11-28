@@ -7,6 +7,7 @@ import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Services from "./components/Services/Services";
 import Loyalty from "./components/Loyalty/Loyalty";
 import Stats from "./components/Stats/Stats";
+import Hello from "./components/Hello/Hello";
 
 function App(props) {
 
@@ -19,18 +20,11 @@ function App(props) {
                         <Navbar/>
                         <div className="content">
                             <Routes>
-                                <Route path="/warehouse" element={
-                                    <Warehouse data={props.data}/>}
-                                />
-                                <Route path="/services" element={
-                                    <Services services={props.services}/>}
-                                />
-                                <Route path="/loyalty" element={
-                                    <Loyalty loyalty={props.loyalty}/>}
-                                />
-                                <Route path="/stats" element={
-                                    <Stats data={props.data}/>}
-                                />
+                                <Route path="/" element={<Hello/>}/>
+                                <Route path="/warehouse" element={<Warehouse/>}/>
+                                <Route path="/services" element={<Services/>}/>
+                                <Route path="/loyalty" element={<Loyalty/>}/>
+                                <Route path="/stats" element={<Stats/>}/>
                             </Routes>
                         </div>
                     </div>

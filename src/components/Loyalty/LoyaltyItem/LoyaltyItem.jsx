@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from "moment";
 
 const LoyaltyItem = (props) => {
     return (
@@ -13,7 +14,7 @@ const LoyaltyItem = (props) => {
                 <li className="dataItem__name">name</li>
                 <li>{props.name}</li>
                 <li className="dataItem__name">birthday</li>
-                <li>{props.birthday}</li>
+                <li>{moment(props.birthday).format("DD.MM.YYYYг")}</li>
             </ul>
         </>
     );

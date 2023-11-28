@@ -10,7 +10,7 @@ const StatsItem = (props) => {
                 <li>{props.name}</li>
                 <li className="dataItem__name">cost</li>
                 <li>{props.cost}</li>
-                <li className="dataItem__name">quantity</li>
+                <li className="dataItem__name">number of sales</li>
                 <li>{props.quantitySales}</li>
             </ul>
         </>

@@ -10,12 +10,14 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 800;
+  transition: 0.3s;
 }
 .nav__list a:hover {
   color: rgba(37, 99, 235, 0.6);
 }
 .nav__list a:hover path {
   fill: rgba(37, 99, 235, 0.6);
+  transition: 0.3s;
 }
 .nav__list a.active {
   color: #2563EB;
