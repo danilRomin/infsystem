@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Warehouse from "./components/Warehouse/Warehouse";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Services from "./components/Services/Services";
+import Loyalty from "./components/Loyalty/Loyalty";
+import Stats from "./components/Stats/Stats";
 
 function App(props) {
 
@@ -17,14 +19,18 @@ function App(props) {
                         <Navbar/>
                         <div className="content">
                             <Routes>
-                                <Route path="/warehouse" element={<Warehouse
-                                    data={props.data}/>}
+                                <Route path="/warehouse" element={
+                                    <Warehouse data={props.data}/>}
                                 />
-                                <Route path="/serviсes" element={<Services
-                                    services={props.services}/>}
+                                <Route path="/services" element={
+                                    <Services services={props.services}/>}
                                 />
-
-
+                                <Route path="/loyalty" element={
+                                    <Loyalty loyalty={props.loyalty}/>}
+                                />
+                                <Route path="/stats" element={
+                                    <Stats data={props.data}/>}
+                                />
                             </Routes>
                         </div>
                     </div>

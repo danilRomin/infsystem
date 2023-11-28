@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WarehouseItem = (props) => {
+const StatsItem = (props) => {
     return (
         <>
             <ul className="dataItem">
@@ -11,10 +11,10 @@ const WarehouseItem = (props) => {
                 <li className="dataItem__name">cost</li>
                 <li>{props.cost}</li>
                 <li className="dataItem__name">quantity</li>
-                <li>{props.quantity}</li>
+                <li>{props.quantitySales}</li>
             </ul>
         </>
     );
 };
 
-export default WarehouseItem;
+export default StatsItem;

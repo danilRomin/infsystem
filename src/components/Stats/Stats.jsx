@@ -1,25 +1,27 @@
 import React from 'react';
-import ServicesItem from "./ServicesItem/ServicesItem";
+import StatsItem from "./StatsItem/StatsItem";
 
-const Services = (props) => {
+const Stats = (props) => {
 
     // Преобразование каждого элемента массива
-    const servicesElement =
-        props.services.map(element =>
-            <ServicesItem
+    const statsElement =
+        props.data.map(element =>
+            <StatsItem
                 id={element.id}
                 name={element.name}
                 cost={element.cost}
+                quantitySales={element.quantitySales}
             />
         )
+
     return (
         <>
-            <h2>Дополнительные услуги</h2>
+            <h2>Продано за месяц</h2>
             <div className="content__data">
-                {servicesElement}
+                {statsElement}
             </div>
         </>
     );
 };
 
-export default Services;
+export default Stats;

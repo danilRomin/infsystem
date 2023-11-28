@@ -12,7 +12,6 @@ const Warehouse = (props) => {
                     cost={element.cost}
                     quantity={element.quantity}
                 />
-
         )
 
     return (
